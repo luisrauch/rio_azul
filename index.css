@@ -1,0 +1,93 @@
+* { /*zerar html inicial*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+   /* border: solid 5px rgb(0, 255, 238); /*tentando identificar o problema da logo presa na lateral*/
+    width: 100%;
+    background-image: linear-gradient(to bottom, yellow, white);/*para fazer fundo degradê*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 10px /*padding: valor1 valor2 valor3 valor4; espaçamentos superior, direito, inferior e esquerdo nesta ordem.*/
+}
+
+#container-logo {
+    width: 50%;
+    height: 250px;
+    /*border: solid 5px #f00; /*tentando identificar o problema da logo presa na lateral*/
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    color: #494738;
+}
+
+#centro {
+    width: 20%;
+}
+
+#titulo{
+    font-size: 35px;
+}
+
+
+.Menu {
+    /*border: solid 5px orange; /*verificando a função apenas....pode tirar*/
+
+}
+
+.Menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.Menu li a {
+    font-size: 25px;
+    text-decoration: none;
+    color: #494738;
+    /*text-transform: uppercase;*/
+    padding: 5px 5px;
+    /*border: solid 5px green;/*verificando a função apenas....pode tirar*/
+}
+
+.Menu li a :hover {
+    background-color: rgba(100, 100, 100, 0.8);
+    text-decoration: underline;/*não está funcionando*/
+    font-size: larger;/*não está funcionando*/
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+
+}
+
+Body {
+    /*border: solid 5px rgb(255, 0, 217);/*verificando a função apenas....pode tirar*/
+    background: #FFFFFF;
+    color: #494738
+}
+
+h1 {
+    margin: 50px;
+    text-align: center;
+    font-size: 40px;
+}
+
+p {
+    font-size: 20px;
+    text-indent: 2em;
+    line-height: 1.2em;
+    margin-bottom: 50px;
+}
+
+footer {
+    background: #000000;
+    color: #FFFFFF;
+    text-align: center;
+}
