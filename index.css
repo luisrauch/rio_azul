@@ -1,24 +1,25 @@
-* { /*zerar html inicial*/
+{ /*zerar html inicial*/
     padding: 0;
-    margin: 0;
+    margin: 5px;
     box-sizing: border-box;
 }
 
 
-header {
-   /* border: solid 5px rgb(0, 255, 238); /*tentando identificar o problema da logo presa na lateral*/
-    width: 100%;
-    background-image: linear-gradient(to bottom, yellow, white);/*para fazer fundo degradê*/
+header { /*define as configurações do cabeçalho*/
+    border: solid 5px rgb(255, 0, 157); /*tentando identificar o problema da logo presa na lateral*/
+    margin: 0px;
+    width: 100%; /*largura de 100%*/
+    background-image: linear-gradient(to bottom, yellow, white); /*para fazer fundo degradê*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10px /*padding: valor1 valor2 valor3 valor4; espaçamentos superior, direito, inferior e esquerdo nesta ordem.*/
+    padding: 0 10px; /*padding: valor1 valor2 valor3 valor4; espaçamentos superior, direito, inferior e esquerdo nesta ordem.*/
 }
 
 #container-logo {
     width: 50%;
     height: 250px;
-    /*border: solid 5px #f00; /*tentando identificar o problema da logo presa na lateral*/
+    border: solid 5px #f00; /*tentando identificar o problema da logo presa na lateral*/
     justify-content: space-around;
     display: flex;
     align-items: center;
@@ -27,48 +28,46 @@ header {
 }
 
 #centro {
+    border: solid 5px rgb(0, 255, 26);
     width: 20%;
 }
 
-#titulo{
+#titulo {
+    color: #494738;
+    border: solid 5px rgb(0, 221, 255);
     font-size: 35px;
 }
 
-
-.Menu {
-    /*border: solid 5px orange; /*verificando a função apenas....pode tirar*/
-
-}
-
-.Menu li {
+nav li {
     display: inline-block;
     margin: 0 10px;
 }
 
-.Menu li a {
-    font-size: 25px;
+nav a {
+    font-size: 150%;
     text-decoration: none;
-    color: #494738;
-    /*text-transform: uppercase;*/
-    padding: 5px 5px;
-    /*border: solid 5px green;/*verificando a função apenas....pode tirar*/
+    color: #494738; /*text-transform: uppercase;*/
+    padding: 10px 10px;
+    border: solid 5px green; /*verificando a função apenas....pode tirar*/
 }
 
-.Menu li a :hover {
-    background-color: rgba(100, 100, 100, 0.8);
-    text-decoration: underline;/*não está funcionando*/
-    font-size: larger;/*não está funcionando*/
+nav a:hover {
+    background-color: #FFFFFF;/*verificando a função apenas....pode tirar*/
+    color: #fd0000;
+    text-decoration: underline;
+    border: solid 5px green; /*verificando a função apenas....pode tirar*/
 }
 
-nav {
-    position: absolute;
-    top: 110px;
-    right: 0;
 
-}
+
+
+
+
+
+
 
 Body {
-    /*border: solid 5px rgb(255, 0, 217);/*verificando a função apenas....pode tirar*/
+    border: solid 5px rgb(0, 17, 255); /*verificando a função apenas....pode tirar*/
     background: #FFFFFF;
     color: #494738
 }
@@ -86,8 +85,22 @@ p {
     margin-bottom: 50px;
 }
 
+
+.porque {
+    display: inline-block;
+    vertical-align: top;
+    width: 28%;
+    margin-right: 0;
+}
+
+/*.quinteto{
+    width: 20%;
+}*/
+
+
+
 footer {
-    background: #000000;
-    color: #FFFFFF;
+    background: yellow;
+    color: black;
     text-align: center;
 }
