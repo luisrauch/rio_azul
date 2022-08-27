@@ -1,4 +1,4 @@
-{ /*zerar html inicial*/
+* { /*zerar html inicial*/
     padding: 0;
     margin: 5px;
     box-sizing: border-box;
