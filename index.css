@@ -1,40 +1,41 @@
-* { /*zerar html inicial*/
+*, *:before, *:after { /*zerar html inicial*/
     padding: 0;
-    margin: 5px;
-    box-sizing: border-box;
+    margin: 0;
+    -webkit-box-sizing: border-box;/*versões mais antigas do Chrome, Safari e Android*/
+    -moz-box-sizing: border-box; /*todas as versões do Firefox*/
+    box-sizing: border-box;/*garante que todos tamanhos dos elementos, somando com os paddings e borders se auto ajustem ao tamanho especificado*/
 }
 
-
 header { /*define as configurações do cabeçalho*/
-    border: solid 5px rgb(255, 0, 157); /*tentando identificar o problema da logo presa na lateral*/
+   /* border: solid 5px rgb(255, 0, 157); /*tentando identificar o problema da logo presa na lateral*/
     margin: 0px;
     width: 100%; /*largura de 100%*/
     background-image: linear-gradient(to bottom, yellow, white); /*para fazer fundo degradê*/
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10px; /*padding: valor1 valor2 valor3 valor4; espaçamentos superior, direito, inferior e esquerdo nesta ordem.*/
+    /*padding: 10px 10px; /*padding: valor1 valor2 valor3 valor4; espaçamentos superior, direito, inferior e esquerdo nesta ordem.*/
 }
 
 #container-logo {
     width: 50%;
     height: 250px;
-    border: solid 5px #f00; /*tentando identificar o problema da logo presa na lateral*/
-    justify-content: space-around;
+    /*border: solid 5px #f00; /*tentando identificar o problema da logo presa na lateral*/
+    justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 0 30px;
+   /* padding-left: 10px;*/
     color: #494738;
 }
 
 #centro {
-    border: solid 5px rgb(0, 255, 26);
+    /*border: solid 5px rgb(0, 255, 26);*/
     width: 20%;
 }
 
 #titulo {
     color: #494738;
-    border: solid 5px rgb(0, 221, 255);
+    /*border: solid 5px rgb(0, 221, 255);*/
     font-size: 35px;
 }
 
@@ -48,26 +49,19 @@ nav a {
     text-decoration: none;
     color: #494738; /*text-transform: uppercase;*/
     padding: 10px 10px;
-    border: solid 5px green; /*verificando a função apenas....pode tirar*/
+   /* border: solid 5px green; /*verificando a função apenas....pode tirar*/
 }
 
 nav a:hover {
-    background-color: #FFFFFF;/*verificando a função apenas....pode tirar*/
+    /*background-color: #FFFFFF;/*verificando a função apenas....pode tirar*/*/
     color: #fd0000;
     text-decoration: underline;
-    border: solid 5px green; /*verificando a função apenas....pode tirar*/
+    font-size: 160%;
+   /* border: solid 5px green; /*verificando a função apenas....pode tirar*/
 }
 
-
-
-
-
-
-
-
-
 Body {
-    border: solid 5px rgb(0, 17, 255); /*verificando a função apenas....pode tirar*/
+   /* border: solid 5px rgb(0, 17, 255); /*verificando a função apenas....pode tirar*/
     background: #FFFFFF;
     color: #494738
 }
@@ -85,7 +79,6 @@ p {
     margin-bottom: 50px;
 }
 
-
 .porque {
     display: inline-block;
     vertical-align: top;
@@ -96,8 +89,6 @@ p {
 /*.quinteto{
     width: 20%;
 }*/
-
-
 
 footer {
     background: yellow;
